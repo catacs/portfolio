@@ -176,7 +176,7 @@
       ga('send', 'pageview');
     </script>
     <script src="http://www.google-analytics.com/analytics.js"></script>
-    <script >
+    <script type="text/javascript">
     // Measuring the Critical Rendering Path with Navigation Timing
 	// https://developers.google.com/web/fundamentals/performance/critical-rendering-path/measure-crp
         function logCRP() {
@@ -188,7 +188,8 @@
             + complete + 'ms';
         }
         window.addEventListener("load", function(event) {
-        logCRP();
+            logCRP();
+        });
 	</script>
   </body>
 </html>

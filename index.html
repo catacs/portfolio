@@ -1,71 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html"  charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content=" FILL ME IN ">
-    <meta name="author" content=" FILL ME IN ">
-    <title>Cameron Pittman: Portfolio</title>
+    <meta name="description" content="Portfolio">
+    <meta name="author" content="Catalin Stanciu">
+    <title>Catalin Stanciu: Portfolio</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  </head>
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  <span class="light">Start</span> Portfolio
+                </a>
+            </div>
 
-    <!-- Hmm, what is the impact of web fonts on speed? Measure it... -->
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/print.css" rel="stylesheet">
-
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#download">Download</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Catalin Stanciu</h1>
+							<a href="/"><img class="roundit" width="70" height="70" src="img/profilepic.jpg"></a>
+				  			<p><span>Computer scientist</span></p>
+                    	    <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About Catalin</h2>
+                <p>Catalin Stanciu is a computer enthusiast. He created this portfolio at Website Performance Optimization course from <a href="http://www.udacity.com"> Udacity </a> using <a href="http://getbootstrap.com/">Bootstrap</a>.
+            </div>
+        </div>
+    </section>
+    <!-- Download Section -->
+    <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Download Portfolio</h2>
+                    <p>If you want to use this code clone it from <a href="https://github.com/catacs/udportfolio"> github <a> </p>
+                    <a href="https://github.com/catacs/udportfolio" class="btn btn-default btn-lg">Fork me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact</h2>
+                <p>Feel free to email me to askme something or to just say hello!</p>
+                <p><a href="mailto:hello@catacs.com">hello@catacs.com</a>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://twitter.com/nk_ta" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/catacs/" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container text-center">
+            <p> <span id="crp-stats"></span> Copyright &copy; catacs portfolio 2014</p>
+        </div>
+    </footer>
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
     <script>
       (function(w,g){w['GoogleAnalyticsObject']=g;
       w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
-
-      // TODO: replace with your Google Analytics profile ID.
       ga('create', 'UA-XXXX-Y');
       ga('send', 'pageview');
     </script>
     <script src="http://www.google-analytics.com/analytics.js"></script>
     <script async src="js/perfmatters.js"></script>
-  </head>
-
-  <body>
-    <header>
-      <a href="/"><img src="img/profilepic.jpg"></a>
-      <p>Cameron Pittman<br><span>Course Developer</span></p>
-    </header>
-
-    <div class="container">
-      <div class="hero">
-        <strong>I love web development!</strong> This is a template for a simple portfolio. I decided to use it to showcase a few Udacity courses I've taken and some teaching work, but you can use it to showcase any kind of project that you want the world to see :) <br> Contact me: me@email.com
-      </div>
-
-      <div class="content">
-        <ul>
-          <li>
-            <img src="https://lh4.ggpht.com/kJEnfqhPvtm4m3EneSZ4fWYGS8lW4YNhEjk6zPkyrQaBUHc-2Y_ElDic99NHI0h-UBLXVbRCjFybFvrWxdk=s100">
-            <a href="project-2048.html">Build Your Own 2048!</a>
-            <p>I made my own version of 2048. How cool is that!?</p>
-          </li>
-
-          <li>
-            <img src="https://lh6.ggpht.com/f_0W8h__3G99CWTjnMjD8BUKm7yp2-wJyApLtTwFoFtlal2ULf_JgHIsOQq2NiYfKOdMlXlMHDKNo5XVZLs=s100">
-            <a href="project-webperf.html">Website Performance Optimization</a>
-            <p>Hey... this class looks familiar.</p>
-          </li>
-
-          <li>
-            <img src="https://lh5.ggpht.com/IKdCmTWn8a2nMhlwMYzryvzRN5CUZAOBr4tDrEAbszV7TIFe9pRAInA4kkYcgTXwrifJsBEsq1agTueuu-g=s100">
-            <a href="project-mobile.html">Mobile Web Development</a>
-            <p>Making mobile apps isn't so hard after all.</p>
-          </li>
-
-          <li>
-            <img style="width: 100px;" src="views/images/pizzeria.jpg">
-            <a href="views/pizza.html">Cam's Pizzeria</a>
-            <p>Who wants a performant pizza?</p>
-          </li>
-        </ul>
-    </div>
-
-    <footer>
-      <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
-    </footer>
   </body>
 </html>

@@ -6,9 +6,6 @@
     <meta name="description" content="Portfolio">
     <meta name="author" content="Catalin Stanciu">
     <title>Catalin Stanciu: Portfolio</title>
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-   
 </head>
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <!-- Navigation -->
@@ -143,7 +140,29 @@
           webkitRequestAnimationFrame || msRequestAnimationFrame;
       if (raf) raf(cb);
       else window.addEventListener('load', cb);
-    </script>   
+    </script> 
+    <script>
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = 'http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script>
+    <script>
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = 'http://fonts.googleapis.com/css?family=Montserrat:400,700';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script> 
     <!-- jQuery Version 1.11.0 -->
     <script src="js/jquery-1.11.0.js"></script>
     <!-- Bootstrap Core JavaScript -->
@@ -157,6 +176,19 @@
       ga('send', 'pageview');
     </script>
     <script src="http://www.google-analytics.com/analytics.js"></script>
-    <script async src="js/perfmatters.js"></script>
+    <script >
+    // Measuring the Critical Rendering Path with Navigation Timing
+	// https://developers.google.com/web/fundamentals/performance/critical-rendering-path/measure-crp
+        function logCRP() {
+            var t = window.performance.timing, dcl = t.domContentLoadedEventStart
+            - t.domLoading, complete = t.domComplete
+            - t.domLoading;
+            var stats = document.getElementById("crp-stats");
+            stats.textContent = 'DCL: ' + dcl + 'ms, onload: '
+            + complete + 'ms';
+        }
+        window.addEventListener("load", function(event) {
+        logCRP();
+	</script>
   </body>
 </html>
